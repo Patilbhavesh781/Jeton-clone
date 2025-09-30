@@ -1,0 +1,98 @@
+._menu {
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  --height: 48px;
+  pointer-events: none;
+}
+
+._menu .menu-bar {
+  align-items: center;
+  background-color: #f84d35;
+  border-radius: 7em;
+  display: flex;
+  height: var(--height);
+  padding: 0 12px;
+  pointer-events: all;
+  position: relative;
+  gap: 1rem;
+}
+
+._menu-button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+._menu-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+._icon {
+  font-size: 0.7rem;
+}
+
+._menu-drawer {
+  position: absolute;
+  bottom: calc(var(--height) + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+  padding: 0.75rem 1rem;
+  min-width: 160px;
+  z-index: 100;
+}
+
+._menu-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+._menu-drawer li {
+  margin: 0.4rem 0;
+}
+
+.drawer-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #222;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.drawer-link:hover {
+  color: #f84d35;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #f84d35;
+}
+
+.shade {
+  position: fixed;
+  inset: 0;
+  background: rgba(54, 8, 2, 0.6);
+  transition: opacity 0.3s ease-in-out;
+  z-index: 50;
+}

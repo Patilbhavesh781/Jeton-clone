@@ -1,0 +1,101 @@
+/* src/styles/HeroIntro.css */
+
+._common-header[data-layout=full] .main-row {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding-bottom: clamp(116px, 108.863px + 100vw * 0.0183, 140px);
+  padding-top: var(--120, 120px);
+}
+
+.g-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.g-col {
+  flex: 1 1 0px;
+  min-width: auto;
+  padding-left: var(--grid-half-gap, 12px);
+  padding-right: var(--grid-half-gap, 12px);
+}
+
+.xxl-8 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.xxl-4 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.xxl-offset-3 {
+  margin-left: 18.75%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+
+.color-white {
+  color: white;
+}
+
+.title-2 {
+  font-size: clamp(48px, 26.55px + 5.5vw, 120px);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.subhead-2 {
+  font-size: clamp(19px, 17.5px + 0.38vw, 24px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.mb-12 {
+  margin-bottom: var(--12, 3rem);
+}
+
+.mt-32 {
+  margin-top: var(--32, 2rem);
+}
+
+.gap-24 {
+  gap: var(--24, 1.5rem);
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* App buttons */
+._app-button {
+  position: relative;
+  display: block;
+  width: 160px;
+  height: 48px;
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid #fff;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+._app-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+._app-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

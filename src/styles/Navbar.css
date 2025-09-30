@@ -1,0 +1,83 @@
+/* === Navbar container === */
+._navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 0;
+  z-index: 50;
+  background: transparent;
+}
+
+/* === Layout helpers (scoped to navbar only) === */
+._navbar .g-row-full {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+._navbar .flex {
+  display: flex;
+}
+._navbar .items-center {
+  align-items: center;
+}
+._navbar .justify-between {
+  justify-content: space-between;
+}
+
+/* === Wordmark / Logo === */
+._navbar ._wordmark svg {
+  fill: white;
+  height: 32px;
+  width: auto;
+}
+
+/* === Language + CTA wrapper === */
+._navbar .lang-cta-wrapper {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* === Buttons === */
+._navbar ._button {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+._navbar ._button[data-variant="outline"] {
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+}
+._navbar ._button[data-variant="outline"]:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+._navbar ._button[data-variant="primary"] {
+  background: #f73b20;
+  color: white;
+}
+._navbar ._button[data-variant="primary"]:hover {
+  background: #d53018;
+}
+
+/* === Dropdown button (lang select) === */
+._navbar ._dropdown-button {
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.95rem;
+}
+._navbar ._dropdown-button ._icon {
+  font-size: 1rem;
+}

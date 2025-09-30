@@ -1,0 +1,30 @@
+.card-inner {
+    display: flex;
+    gap: 2rem;
+    align-items: center
+}
+
+.card-left {
+    flex: 1
+}
+
+.card-right {
+    flex: 1;
+    display: flex;
+    justify-content: center
+}
+
+.card-visual {
+    width: 320px;
+    height: 200px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ef4444, #fb923c);
+    box-shadow: 0 20px 40px rgba(2, 6, 23, .06)
+}
+
+@media (max-width:900px) {
+    .card-inner {
+        flex-direction: column;
+        text-align: center
+    }
+}

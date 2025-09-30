@@ -11,14 +11,8 @@ export default function Navbar() {
             <div className="glyphs">
               {/* Replace with your actual SVG logo parts */}
               <div className="glyph">
-                <svg width="230" height="415" viewBox="0 0 230 415">
-                  <path d="M117.963 329.079H0.951172V408.049H130.336..." />
-                </svg>
-              </div>
-              <div className="glyph">
-                <svg width="359" height="415" viewBox="0 0 359 415">
-                  <path d="M266.473 98.8964C242.531 85.2262..." />
-                </svg>
+                <img src="/images/QVIPLE.svg" alt="QVIPLE"  width={30}/>
+                <span className="brand_name">QVIPLE</span>
               </div>
               {/* ... Add rest of SVG glyphs if you want exact Jeton wordmark */}
             </div>
@@ -37,7 +31,7 @@ export default function Navbar() {
               data-variant="outline"
             >
               <span className="_icon">🌐</span>
-              <span className="ml-1">en</span>
+              <span className="ml-1">EN</span>
               <span className="_icon chevron">▼</span>
             </button>
           </div>

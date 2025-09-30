@@ -48,24 +48,13 @@ export default function Hero() {
 
           <ul className="snippets">
             {snippets.map((snip, i) => {
-              // Each snippet has its own initial offset, then moves to center
               const x = useTransform(
                 scrollYProgress,
-                [0, 0.5],
-                [
-                  (i - 2) * 150, // scattered initial horizontal positions
-                  0, // center x
-                ]
-              );
+                [0, 0.5],[(i - 2) * 150, 0]);
               const y = useTransform(
                 scrollYProgress,
-                [0, 0.5],
-                [
-                  (i - 2) * 50, // scattered initial vertical positions
-                  0, // center y
-                ]
-              );
-              const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]); // optional slight scale
+                [0, 0.5],[(i - 2) * 50, 0]);
+              const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
               return (
                 <motion.li
                   key={snip.id}

@@ -35,6 +35,7 @@
   padding: 0.4rem 0.8rem;
   border-radius: 20px;
   position: relative;
+  text-decoration: none;
   transition: background 0.2s ease;
 }
 

@@ -19,6 +19,21 @@
 ._navbar .flex {
   display: flex;
 }
+
+.brand_name{
+  /* color: linear-gradient(93.51deg, #515fe0 2.84%, #4c92ee 99.18%); */
+  text-decoration: none;
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: linear-gradient(93.51deg, #515fe0 2.84%, #4c92ee 99.18%);
+  margin-bottom: .1rem !important;
+  letter-spacing: .2rem;
+  background: linear-gradient(93.51deg, #515fe0 2.84%, #4c92ee 99.18%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+}
+
 ._navbar .items-center {
   align-items: center;
 }
@@ -33,6 +48,10 @@
   width: auto;
 }
 
+.ctas{
+  gap: 0.5rem;
+}
+
 /* === Language + CTA wrapper === */
 ._navbar .lang-cta-wrapper {
   display: flex;
@@ -43,7 +62,7 @@
 /* === Buttons === */
 ._navbar ._button {
   padding: 0.5rem 1rem;
-  border-radius: 9999px;
+  border-radius: 15px;
   font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.2s ease;
@@ -70,7 +89,13 @@
 /* === Dropdown button (lang select) === */
 ._navbar ._dropdown-button {
   background: transparent;
-  border: none;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
   color: white;
   cursor: pointer;
   display: flex;
@@ -80,4 +105,10 @@
 }
 ._navbar ._dropdown-button ._icon {
   font-size: 1rem;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .ctas ._button  {
+        transition: transform .3s cubic-bezier(.215, .61, .355, 1);
+    }
 }

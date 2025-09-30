@@ -32,16 +32,23 @@
   position: absolute;
   inset: 0;
   overflow: visible;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .snippet-item {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   will-change: transform, opacity;
 }
 
 .snippet {
-  width: 100%;
-  height: 100%;
+  width: clamp(100px, 12vw, 200px);
+  height: auto;
   animation: float 6s ease-in-out infinite alternate;
 }
 
@@ -75,7 +82,7 @@
 
 .tagline-item {
   height: 100vh;
-  margin-top: calc(-80vh + 1.1em);
+  margin-top: -80vh;
   padding-top: 50vh;
   position: sticky;
   top: 0;
@@ -93,7 +100,7 @@
 
 .tagline-content {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
   align-items: center;
 }
 
@@ -116,25 +123,4 @@
 
 li{
   list-style: none;
-}
-.snippets {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.snippet-item {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.snippet img {
-  width: clamp(100px, 12vw, 200px);
-  height: auto;
-  display: block;
 }

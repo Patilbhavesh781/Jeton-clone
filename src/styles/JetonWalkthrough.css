@@ -1,0 +1,122 @@
+._jeton-walkthrough {
+  position: relative;
+  width: 100%;
+  background: #f58220; /* Jeton orange */
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+._rive-asset {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+}
+
+.heading {
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+
+.feature {
+  margin: 40px auto;
+  max-width: 600px;
+  color: #fff;
+}
+
+.feature .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.feature .text {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.divider {
+  height: 2px;
+  background: #fff;
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.stepper {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+._stepper {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
+
+._stepper li button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.index {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.index svg circle {
+  stroke: #fff;
+  fill: none;
+}
+
+.index span {
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.label {
+  margin-left: 8px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.restart {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+._button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+._button:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+._icon svg {
+  stroke: #fff;
+  fill: #fff;
+}

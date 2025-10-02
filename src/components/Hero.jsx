@@ -50,10 +50,14 @@ export default function Hero() {
             {snippets.map((snip, i) => {
               const x = useTransform(
                 scrollYProgress,
-                [0, 0.5],[(i - 2) * 150, 0]);
+                [0, 0.5],
+                [(i - 2) * 150, 0] // they come into center
+              );
               const y = useTransform(
                 scrollYProgress,
-                [0, 0.5],[(i - 2) * 50, 0]);
+                [0, 0.5],
+                [(i - 2) * 50, 0] // vertical shift into center
+              );
               const scale = useTransform(scrollYProgress, [0, 0.5], [1, 0.9]);
               return (
                 <motion.li

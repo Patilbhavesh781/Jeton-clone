@@ -11,6 +11,7 @@ import VideoBackground from "./components/VideoBackground";
 import JetonWalkthrough from "./components/JetonWalkthrough";
 import MobileAppHero from "./components/MobileAppHero";
 import JetonCardOverview from "./components/JetonCardOverview";
+import CurrencyExchange from "./components/CurrencyExchange";
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
         <JetonWalkthrough />
         <MobileAppHero />
         <JetonCardOverview />
+        <CurrencyExchange />
         <Features />
         <CardSection />
         <Testimonials />

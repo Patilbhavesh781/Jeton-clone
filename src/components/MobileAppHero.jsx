@@ -21,8 +21,8 @@ const MobileAppHero = () => {
       {/* Hero Text + CTA */}
       <div className="g-row relative color-white">
         <div className="g-col xxl-7 md-9 xs-16 flex flex-col gap-32-24">
-          <h2 className="title-3 -medium">All your finances, in one app.</h2>
-          <p className="subhead-2 -medium">Join 1M+ happy users today. </p>
+          <h2 className="title-3 -medium white">All your finances, in one app.</h2>
+          <p className="subhead-2 -medium white">Join 1M+ happy users today. </p>
 
           <div className="ctas flex gap-24">
             <a

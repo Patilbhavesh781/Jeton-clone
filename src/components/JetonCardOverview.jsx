@@ -46,9 +46,9 @@ const JetonCardOverview = () => {
             width="1960"
             height="1240"
             loop
+            autoPlay
             muted
             playsInline
-            autoPlay
             preload="metadata"
             style={{
               transform: "translate(0%, 10%) rotate(0deg) scale(0.9, 0.9)",

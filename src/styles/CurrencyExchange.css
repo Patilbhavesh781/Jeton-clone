@@ -1,0 +1,90 @@
+._currency-exchange-calculator {
+  margin-top: calc(var(--180-64) * -1);
+  padding-bottom: clamp(36px, 144.999px + 100vw * -0.0641, 120px);
+  padding-top: calc(var(--180-64) + var(--180-64));
+  position: relative;
+  z-index: 2;
+}
+
+._currency-exchange-calculator canvas {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  position: absolute;
+}
+
+._currency-exchange-calculator > :not(canvas) {
+  position: relative;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.color-orange {
+  color: #f73b20;
+}
+
+.pointer-events-none {
+  pointer-events: none;
+}
+
+.mb-96-48 {
+  margin-bottom: var(--96-48);
+}
+
+.w-cols-10 {
+  width: var(--cols-10);
+}
+
+._tag[data-tone="orange"] {
+  --color: #f73b20;
+  color: var(--color);
+  padding: 4px 12px;
+  display: inline-block;
+  border-radius: 4em;
+}
+
+._tag .outline {
+  border-radius: 4em;
+  outline: 1px solid var(--color);
+  outline-offset: -1px;
+}
+
+._tag svg rect:first-child {
+  opacity: 0.2;
+}
+
+._tag svg rect:last-child {
+  stroke-dasharray: var(--length, 0)
+    calc((1 - var(--p, 0)) * var(--length, 0));
+  stroke-dashoffset: var(--length, 0);
+}
+
+.title-3 {
+  font-size: clamp(40px, 28.105px + 100vw * 0.0305, 80px);
+  letter-spacing: 0.01em;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.mt-16 {
+  margin-top: var(--16);
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
+}

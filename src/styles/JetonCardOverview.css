@@ -74,12 +74,15 @@
   font-size: clamp(27px, 20.76px + 100vw * 0.016, 48px);
   letter-spacing: 0.01em;
   line-height: 1.2;
+  color: #f73b20;
 }
 
 .title-3 {
   font-size: clamp(40px, 28.105px + 100vw * 0.0305, 80px);
   letter-spacing: 0.01em;
   line-height: 1;
+  color: #f73b20;
+  font-weight: 700;
 }
 
 .-medium {
@@ -146,10 +149,11 @@ video._video-asset {
 ._button {
   color: var(--color);
   position: relative;
+
 }
 
 [data-button] {
-  width: max-content;
+  width: 140px;
   --height: 48px;
   align-items: center;
   border-radius: 12px;

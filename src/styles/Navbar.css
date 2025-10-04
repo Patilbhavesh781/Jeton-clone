@@ -27,7 +27,7 @@
   font-weight: 500;
   color: linear-gradient(93.51deg, #515fe0 2.84%, #4c92ee 99.18%);
   margin-bottom: .1rem !important;
-  letter-spacing: .2rem;
+
   background: linear-gradient(93.51deg, #515fe0 2.84%, #4c92ee 99.18%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -55,13 +55,13 @@
 /* === Language + CTA wrapper === */
 ._navbar .lang-cta-wrapper {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   align-items: center;
 }
 
 /* === Buttons === */
 ._navbar ._button {
-  padding: 0.5rem 1rem;
+  padding: 1rem 2rem;
   border-radius: 15px;
   font-size: 0.95rem;
   font-weight: 500;
@@ -83,7 +83,7 @@
   color: white;
 }
 ._navbar ._button[data-variant="primary"]:hover {
-  background: #d53018;
+  background: #e79689;
 }
 
 /* === Dropdown button (lang select) === */
